@@ -1,0 +1,13 @@
+# Pastas e arquivos gerados pelo Maven e Java
+target/
+*.class
+*.jar
+
+# Arquivos internos do IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

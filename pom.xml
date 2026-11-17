@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.escola</groupId>
+    <artifactId>controleDeNotas</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- Java 11 garante compatibilidade total com IntelliJ 2021.3.1 e JDK 11/17 -->
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Biblioteca JUnit 5 compatível com o runner nativo do IntelliJ 2021.3.1 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin que executa os testes JUnit 5 pelo comando 'mvn test' -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M7</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
