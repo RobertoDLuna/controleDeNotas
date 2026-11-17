@@ -34,7 +34,7 @@ public class BoletimService {
         if (frequencia < 75) {
             return "REPROVADO_POR_FALTA";
         }
-        if (media >= 7.0) {
+        if (media >= 7.5) {
             return "APROVADO";
         } else if (media >= 4.0) {
             return "RECUPERACAO";
